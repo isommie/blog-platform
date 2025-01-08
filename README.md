@@ -65,11 +65,15 @@ Here is the structure of the project:
 │   └── roles.js                      # Role-based access config
 ├── controllers/                      # Controllers for handling requests
 │   ├── blogController.js             # CRUD for blog posts
+│   ├── adminController.js            
+│   ├── notificationController.js             # CRUD for blog posts
 │   ├── userController.js             # User management
 │   ├── commentController.js          # CRUD for comments
 │   └── fileController.js             # File upload handling
 ├── middleware/                       # Middlewares for authentication, logging, etc.
 │   ├── authMiddleware.js             # JWT authentication middleware
+│   ├── roleMiddleware.js           
+│   ├── loggerMiddleware.js        
 │   └── errorHandler.js               # Global error handler
 ├── models/                           # MongoDB schemas
 │   ├── BlogPost.js                   # Blog post schema
@@ -81,12 +85,21 @@ Here is the structure of the project:
 │   └── commentRoutes.js              # Routes for comments
 ├── services/                         # External service integrations
 │   ├── cmsService.js                 # CMS integration logic
+│   ├── fileService.js                
+│   ├── notificationService.js        
 │   └── emailService.js               # Email sending logic
 ├── utils/                            # Utility functions/helpers
 │   ├── email.js                      # Email helper functions
+│   ├── dateFormatter.js
+│   ├── logger.js
+│   ├── paginator.js
+│   ├── sanitization.js
+│   ├── validator.js
 │   └── slugify.js                    # URL slug generator
 ├── validations/                      # Input validation files
 │   ├── blogValidator.js              # Blog post validation
+│   ├── commentValidator.js           
+│   ├── fileValidator.js              
 │   └── userValidator.js              # User input validation
 ├── /tests                            # All test files
 │   ├── controllers-tests/            # Tests for controllers
