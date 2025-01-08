@@ -1,0 +1,35 @@
+# Node.js modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Build and deployment files
+dist/
+coverage/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and editor settings
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.bak
+
+# Git files
+.git/
+.gitignore
+
+# Testing artifacts
+jest-report.xml
+test-output/
+
+package-lock.json
